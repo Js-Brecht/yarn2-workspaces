@@ -1,0 +1,24 @@
+{
+  "name": "yarn2-monorepo-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Albright",
+  "license": "ISC",
+  "installConfig": {
+    "pnp": true
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1"
+  },
+  "devDependencies": {
+    "@yarnpkg/pnpify": "^2.0.0-rc.20"
+  }
+}
